@@ -1,0 +1,84 @@
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #2f3640;
+}
+
+/* First Toggler */
+.change_mode {
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+}
+.mode_changer {
+  width: 40px;
+  height: 22px;
+  cursor: pointer;
+  appearance: none;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.5s;
+  outline: none;
+  background-color: #c3c3c3;
+}
+.mode_changer::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: 0.5s;
+  background-color: #fff;
+}
+.mode_changer:checked {
+  cursor: pointer;
+  background-color: #273c75;
+}
+.mode_changer:checked.mode_changer::before {
+  left: 21px;
+  background-color: #9c88ff;
+}
+
+/* Second Toggler */
+.change_mode2 {
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+}
+.mode_changer2 {
+  width: 56px;
+  height: 22px;
+  cursor: pointer;
+  appearance: none;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.5s;
+  outline: none;
+  background-color: #c3c3c3;
+}
+.mode_changer2::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -4px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  transition: 0.5s;
+  background-color: #9c88ff;
+}
+.mode_changer2:checked {
+  cursor: pointer;
+  background-color: #192a56;
+}
+.mode_changer2:checked.mode_changer2::before {
+  left: 30px;
+  background-color: #487eb0;
+}
